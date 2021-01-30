@@ -7,19 +7,21 @@
   <h1></h1>
 </div>
 
-注意需要开启微信开发者工具中的 ES6 转 ES5 功能（部分功能用到async需要开启增强编译），将微信更新到最新版本。
+该项目是对一些平时常用功能的自定义封装，持续补充及更新，注意需要开启微信开发者工具中的 ES6 转 ES5 功能（部分功能用到Async需要开启增强编译），并将微信更新到最新版本。
 
 ## 项目预览
 
-<img src="./static/move.gif" width = "200" height = "300" alt=""></img>
-<img src="./static/dialog.gif" width = "200" height = "300" alt=""></img>
-<img src="./static/scan.gif" width = "200" height = "300" alt=""></img>
+<img src="./static/move.gif" width = "160" height = "280" alt=""></img>
+<img src="./static/dialog.gif" width = "160" height = "280" alt=""></img>
+<img src="./static/blue.gif" width = "160" height = "280" alt=""></img>
+<img src="./static/scan.gif" width = "160" height = "280" alt=""></img>
 
   <h1></h1>
 
 ## 主要内容
 
 - [可触摸拖动菜单栏](#可触摸拖动菜单栏)
+- [蓝牙连接/接受/发送数据](https://github.com/arsize/ble)
 - [自定义扫码界面](#自定义扫码界面)
 - [自定义全局弹窗组件](#dialog)
 
