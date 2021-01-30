@@ -1,0 +1,43 @@
+<view class="dialogconfirm" wx:if="{{status}}">
+	<block wx:if="{{type=='normal'}}">
+
+		<view class="dialogTop">
+			<view style="font-size:34rpx;color:#333333;font-weight:bold;">{{title}}</view>
+			<view
+			 wx:if="{{closeicon}}"
+			 class="closedialog"
+			 bind:tap="closedialogconfirm"
+			>
+				<image
+				 class="imgclose"
+				 style="width:25rpx;height:25rpx;"
+				 src="../../img/icon_cancel@2x.png"
+				/>
+			</view>
+		</view>
+		<view class="dialogBody" style="justify-content:{{contentposition}};{{contentstyle}}">{{content}}</view>
+		<view class="dialogFoot" wx:if="{{foot.length > 0}}">
+			<view style="display:flex;width:100%;height:100%;flex-direction: column;align-items: center;" wx:if="{{foot.length <=1}}">
+				<view bindtap="fb0" class="item0">
+					<view class="text">{{foot[0].text}}</view>
+				</view>
+			</view>
+			<view style="display:flex;justify-content: space-between;width:100%;height:100%;align-items: center;" wx:if="{{foot.length==2}}">
+				<view bindtap="fb0" class="item1">
+					<view class="text">{{foot[0].text}}</view>
+				</view>
+				<view bindtap="fb1" class="item2">
+					<view class="text">{{foot[1].text}}</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>
+<block wx:if="{{marsktap}}">
+	<view bind:tap="hideexchangeStatus" class="mask {{status?'show':'noshow'}}"></view>
+</block>
+<block wx:else>
+	<view class="mask {{status?'show':'noshow'}}"></view>
+
+</block>
+

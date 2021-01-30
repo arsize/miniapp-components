@@ -1,0 +1,179 @@
+.dialogconfirm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640rpx;
+  border-radius: 16rpx;
+  background-color: white;
+  z-index: 50000;
+}
+
+.dialogconfirm .dialogTop {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fbfbfb;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogconfirm .dialogBody2 {
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  color: #666666;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.dialogconfirm .dialogBody {
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  color: #666666;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.dialogconfirm .dialogFoot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  padding-bottom: 40rpx;
+}
+
+.dialogconfirm .closedialog {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
+
+.dialogconfirm .dialogFoot .item0 {
+  width: 400rpx;
+  height: 88rpx;
+  background: linear-gradient(
+    270deg,
+    rgba(65, 190, 255, 1) 0%,
+    rgba(26, 110, 255, 1) 100%
+  );
+  box-shadow: 0rpx 4rpx 6rpx 0rpx rgba(27, 112, 255, 0.25);
+  border-radius: 44rpx;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogconfirm .dialogFoot .item0 .btnbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 44rpx;
+}
+
+.dialogconfirm .dialogFoot .item0 .text {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+}
+
+.dialogconfirm .dialogFoot .subText {
+  color: #166cff;
+  font-size: 28rpx;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.dialogconfirm .dialogFoot .item2 {
+  position: relative;
+  width: 260rpx;
+  height: 88rpx;
+  background: linear-gradient(
+    270deg,
+    rgba(65, 190, 255, 1) 0%,
+    rgba(26, 110, 255, 1) 100%
+  );
+  box-shadow: 0rpx 4rpx 6rpx 0rpx rgba(27, 112, 255, 0.25);
+  border-radius: 44rpx;
+}
+
+.dialogconfirm .dialogFoot .item2 .btnbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260rpx;
+  height: 90rpx;
+}
+
+.dialogconfirm .dialogFoot .item2 .text {
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  font-size: 28rpx;
+  transform: translate(-50%, -50%);
+}
+
+.dialogconfirm .dialogFoot .item1 {
+  width: 258rpx;
+  height: 84rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 44rpx;
+  border: 2rpx solid rgba(26, 110, 255, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rpx;
+}
+
+.dialogconfirm .dialogFoot .item1 .text {
+  color: #1a6eff;
+  font-size: 28rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  z-index: 4000;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.show {
+  display: block;
+}
+
+.noshow {
+  display: none;
+}

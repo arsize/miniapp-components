@@ -1,0 +1,64 @@
+<view class="page" style="{{istrue?'background: transparent;':'background: #000;'}}">
+	<dialog></dialog>
+	<camera
+	 bindinitdone="initdone"
+	 bindscancode='scansuccess'
+	 mode='scanCode'
+	 flash="{{flash}}"
+	 device-position="back"
+	 binderror="error"
+	 style="width: 100%; height: 90vh;"
+	>
+		<view class="firstmask"></view>
+		<view class="centerline">
+			<view class="one">
+				<view class="title">
+					{{'对准屏幕二维码'}}
+				</view>
+			</view>
+			<view class="center">
+				<view class="borderitem1"></view>
+				<view class="borderitem2"></view>
+				<view class="borderitem3"></view>
+				<view class="borderitem4"></view>
+				<image
+				 mode="aspectFill"
+				 class='scan-animation'
+				 src="../../img/scan_lines.png"
+				></image>
+
+			</view>
+			<view class="two">
+			</view>
+		</view>
+		<view class="lastmask">
+			<view class="bottomBtn">
+				<view class="neicontent">
+					<view class="left" bindtap="inputid">
+						<image class="itemimg" src="../../img/v3_scan_hand.png" />
+						<view class="leftbottom">
+							{{'输入ID'}}
+						</view>
+					</view>
+					<view class="right" bindtap="openlight">
+						<image
+						 class="itemimg"
+						 wx:if="{{flash=='on'}}"
+						 src="../../img/v3_scan_light_on.png"
+						/>
+						<image
+						 class="itemimg"
+						 wx:else
+						 src="../../img/v3_scan_light.png"
+						/>
+						<view class="rightbottom">
+							{{'打开手电筒'}}
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</camera>
+
+</view>
+

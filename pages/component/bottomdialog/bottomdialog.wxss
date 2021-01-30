@@ -1,0 +1,175 @@
+.dialogconfirm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: mymove 0.5s;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  background-color: white;
+  z-index: 50000;
+}
+@keyframes mymove {
+  from {
+    bottom: -350rpx;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.dialogconfirm .dialogTop {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  display: flex;
+  padding: 0 32rpx;
+  padding-top: 40rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialogconfirm .dialogBody2 {
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  color: #666666;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.dialogconfirm .dialogBody {
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  color: #666666;
+ 
+  text-align: left;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.dialogconfirm .dialogFoot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  padding-bottom: 60rpx;
+}
+.dialogconfirm .dialogFoot .item0 {
+  width: 327rpx;
+  height: 98rpx;
+  background: #1a6eff;
+  box-shadow: 0rpx 4rpx 6rpx 0rpx rgba(27, 112, 255, 0.25);
+  border-radius: 12rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogconfirm .dialogFoot .item0 .btnbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 44rpx;
+}
+
+.dialogconfirm .dialogFoot .item0 .text {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+}
+
+.dialogconfirm .dialogFoot .subText {
+  color: #166cff;
+  font-size: 28rpx;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.dialogconfirm .dialogFoot .item2 {
+  position: relative;
+  width: 327rpx;
+  height: 98rpx;
+
+  background: #1a6eff;
+  box-shadow: 0rpx 4rpx 6rpx 0rpx rgba(27, 112, 255, 0.25);
+  border-radius: 12rpx;
+}
+
+.dialogconfirm .dialogFoot .item2 .btnbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260rpx;
+  height: 90rpx;
+}
+
+.dialogconfirm .dialogFoot .item2 .text {
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  font-size: 32rpx;
+  transform: translate(-50%, -50%);
+}
+
+.dialogconfirm .dialogFoot .item1 {
+  width: 327rpx;
+  height: 98rpx;
+  background: #eaeaea;
+  border-radius: 12rpx;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rpx;
+}
+
+.dialogconfirm .dialogFoot .item1 .text {
+  color: #1a6eff;
+  font-size: 32rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  z-index: 4000;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.show {
+  display: block;
+}
+
+.noshow {
+  display: none;
+}

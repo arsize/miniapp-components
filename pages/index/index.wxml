@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<map
+ scale="{{13}}"
+ layer-style="1"
+ id="myMap"
+ show-location
+ bindregionchange="regionchange"
+ class="map"
+>
+	<view class="centerPosition">
+		<image class="map-center-image" src="../../img/mapcenter.png"></image>
+	</view>
+</map>
+
+<!-- 菜单卡片 -->
+<view
+ style="background-image: url(../../img/index_munu_pages.png);{{touchend?'height:'+blockHeight+'rpx;':'height:'+blockHeight+'rpx;'}}{{mapmoveing?'height:300rpx;transition: height 0.4s;':'transition: height 0.4s;'}}"
+ class="cardServeType"
+ bindtouchstart="touchstartFn"
+ bindtouchend="touchendFn"
+ catch:touchmove="touchmoveFn"
+>
+	<view class="instruction-next-btn" bind:tap="gotoscan">
+		<image style="width:32rpx;height:32rpx;margin-right:15rpx;" src="../../img/zucheindex04.png" />
+		自定义扫码
+	</view>
+	<view class="dialogBtn">
+		<view class="left" bind:tap="showdialog1">弹窗模板1</view>
+		<view class="right" bind:tap="showdialog2">弹窗模板2</view>
+	</view>
+
+</view>
+
+<dialog></dialog>
+<bottomdialog></bottomdialog>
+

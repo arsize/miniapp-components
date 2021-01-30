@@ -1,0 +1,79 @@
+.map {
+  width: 100%;
+  height: 100vh;
+}
+.centerPosition {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: auto auto;
+  width: 45rpx;
+  height: 63rpx;
+  z-index: 0;
+}
+
+.centerPosition .map-center-image {
+  width: 40rpx;
+  height: 58rpx;
+}
+.cardServeType {
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, 0%);
+  padding-top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 431rpx;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.instruction-next-btn {
+  width: 686rpx;
+  height: 98rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2871ef;
+  color: white;
+  border-radius: 20rpx;
+  margin: 15rpx auto;
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+  margin-top: 0;
+}
+.instruction-ad-block {
+  width: 650rpx;
+  height: 180rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f5fa;
+  border-radius: 20rpx;
+}
+.dialogBtn {
+  width: 100%;
+  padding: 0 35rpx;
+  display: flex;
+  justify-content:flex-start;
+
+}
+.dialogBtn .left {
+  padding: 20rpx 30rpx;
+  background-color: #2871ef;
+  color: white;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+}
+.dialogBtn .right {
+  padding: 20rpx 30rpx;
+  background-color: #2871ef;
+  color: white;
+  border-radius: 20rpx;
+}
