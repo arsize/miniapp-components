@@ -15,6 +15,7 @@
 <img src="./static/dialog.gif" width = "170" height = "280" alt=""></img>
 <img src="./static/blue.gif" width = "150" height = "280" alt=""></img>
 <img src="./static/scan.gif" width = "170" height = "280" alt=""></img>
+<img src="./static/lock.gif" width = "170" height = "280" alt=""></img>
 
   <h1></h1>
 

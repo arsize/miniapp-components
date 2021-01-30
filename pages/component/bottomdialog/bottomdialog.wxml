@@ -11,7 +11,7 @@
 				<image
 				 class="imgclose"
 				 style="width:25rpx;height:25rpx;"
-				 src="../../img/icon_cancel@2x.png"
+				 src="../../../img/icon_cancel@2x.png"
 				/>
 			</view>
 		</view>

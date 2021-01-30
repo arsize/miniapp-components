@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<wxs module="lock" src="./lock.wxs"></wxs>
 <map
  scale="{{13}}"
  layer-style="1"
@@ -27,6 +27,33 @@
 	<view class="dialogBtn">
 		<view class="left" bind:tap="showdialog1">弹窗模板1</view>
 		<view class="right" bind:tap="showdialog2">弹窗模板2</view>
+	</view>
+	<view
+	 class="currentOrderBtn"
+	 bindtap="temporaryLockCar"
+	 wx:if="{{!lockStatus}}"
+	>
+		<image style="width:28rpx;height:32rpx;diplay:block;margin-right:10rpx;" src="../../img/index_lock.png"></image>
+		临时锁车
+	</view>
+	<view class="currentLockBtn" wx:else>
+		<view style="position:relative;width:686rpx;height:94rpx;border-radius: 20rpx;background: linear-gradient(90deg, #E8F1FF 0%, #F8FBFF 42%, #E8F0FF 100%);">
+			<view class="lockblocktext">
+				右滑解锁继续骑行
+			</view>
+			<view class="currentLockBtnlight"></view>
+			<view class="maskBlue maskBlueId"></view>
+			<view
+			 catch:touchstart="{{lock.touchstart}}"
+			 catch:touchmove="{{lock.touchmove}}"
+			 catch:touchend="{{lock.touchend}}"
+			 class="lockblock lockblockIdUnq"
+			 style="width:120rpx;position:absolute;"
+			>
+				<image style="width:40rpx;height:32rpx;" src="../../img/index_unlock.png"></image>
+
+			</view>
+		</view>
 	</view>
 
 </view>

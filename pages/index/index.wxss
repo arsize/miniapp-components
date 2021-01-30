@@ -77,3 +77,90 @@
   color: white;
   border-radius: 20rpx;
 }
+.currentOrderBtn {
+  width: 686rpx;
+  height: 98rpx;
+  background: #1a6eff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32rpx;
+  margin: 0 auto;
+  margin-top: 29rpx;
+}
+.currentLockBtn {
+  width: 100%;
+  margin-top: 29rpx;
+  display: flex;
+  justify-content: center;
+}
+.lockblock {
+  z-index: 2000;
+  height: 94rpx;
+  background: #1a6eff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lockblocktext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1a6eff;
+  line-height: 45rpx;
+  opacity: 0.8;
+}
+.currentLockBtnlight {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  animation: lightto 2s infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(0deg);
+  transition: 2s ease;
+}
+@keyframes lightto {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}
+
+.line-block .one {
+  width: 51rpx;
+  height: 12rpx;
+  border-radius: 15rpx;
+  background-color: #166cff;
+  margin-right: 15rpx;
+}
+.line-block .two {
+  width: 22rpx;
+  height: 12rpx;
+  border-radius: 15rpx;
+  background-color: #999999;
+}
+.maskBlue {
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  background-color: #1a6eff;
+  height: 100%;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}

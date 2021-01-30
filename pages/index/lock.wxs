@@ -1,0 +1,106 @@
+
+var isMoveEnd = false
+
+function touchstart(event, ownerInstance) {
+    isMoveEnd = false
+    var leftdis = event.touches[0].pageX
+
+    componentData(leftdis, ownerInstance, 'start')
+
+
+}
+function touchend(event, ownerInstance) {
+    isMoveEnd = true
+    var instances = ownerInstance.selectComponent(".lockblockIdUnq")
+    var maskBlueId = ownerInstance.selectComponent(".maskBlueId")
+    var leftdis = event.changedTouches[0].pageX
+    if (leftdis > 200) {
+        instances.setStyle({
+            'left': '565rpx;',
+            'border-top-left-radius': 0,
+            'border-bottom-left-radius': 0,
+        })
+        maskBlueId.setStyle({
+            'width': 565 + 65 + 'rpx;'
+        })
+        instances.callMethod("movablechange")
+    } else {
+        instances.setStyle({
+            'left': '0rpx;'
+        })
+        maskBlueId.setStyle({
+            'width': '0rpx;'
+        })
+    }
+}
+
+function touchmove(event, ownerInstance) {
+    if (isMoveEnd) return
+    var leftdis = event.touches[0].pageX
+
+    componentData(leftdis, ownerInstance, 'move')
+
+}
+
+function componentData(leftdis, ownerInstance, type) {
+    var instances = ownerInstance.selectComponent(".lockblockIdUnq")
+    var maskBlueId = ownerInstance.selectComponent(".maskBlueId")
+    var temp = ((leftdis * 2) - 60)
+    if (type == 'start') {
+        instances.setStyle({
+            'left': temp > 565 ? 565 + 'rpx;' : temp + 'rpx;',
+            'border-top-left-radius': 0,
+            'border-bottom-left-radius': 0,
+        })
+        maskBlueId.setStyle({
+            'width': temp + 5 + 'rpx;'
+        })
+
+    } else if (type == 'move') {
+        if (temp > 565) {
+            instances.setStyle({
+                'left': 565 + 'rpx;',
+                'border-top-left-radius': 0,
+                'border-bottom-left-radius': 0,
+            })
+            maskBlueId.setStyle({
+                'width': 565 + 60 + 'rpx;'
+            })
+        } else if (temp > 50 && temp < 400) {
+            instances.setStyle({
+                'left': temp + 'rpx;',
+                'border-top-left-radius': 0,
+                'border-bottom-left-radius': 0,
+            })
+            maskBlueId.setStyle({
+                'width': temp + 5 + 'rpx;'
+            })
+        }
+        else if (temp < 50) {
+            instances.setStyle({
+                'left': 0 + 'rpx;'
+            })
+            maskBlueId.setStyle({
+                'width': temp + 5 + 'rpx;'
+            })
+        } else {
+            instances.setStyle({
+                'left': temp + 'rpx;',
+                'border-top-left-radius': 0,
+                'border-bottom-left-radius': 0,
+            })
+            maskBlueId.setStyle({
+                'width': temp + 5 + 'rpx;'
+            })
+        }
+
+    }
+
+
+}
+
+module.exports = {
+    touchstart: touchstart,
+    touchmove: touchmove,
+    touchend: touchend
+}

@@ -8,7 +8,7 @@
 			<image
 			 class="imgclose"
 			 style="width:30rpx;height:30rpx;"
-			 src="../../img/icon_cancel@2x.png"
+			 src="../../../img/icon_cancel@2x.png"
 			/>
 		</view>
 		<view class="dialogTop">{{title}}</view>
