@@ -11,9 +11,9 @@
 
 ## 项目预览
 
-<img src="./static/move.gif" style="width:100px;"></img>
-<img src="./static/dialog.gif" style="width:100px;margin-left:10px;"></img>
-<img src="./static/scan.gif" style="width:80px;margin-left:10px;"></img>
+<img src="./static/move.gif" width = "200" height = "300" alt=""></img>
+<img src="./static/dialog.gif" width = "200" height = "300" alt=""></img>
+<img src="./static/scan.gif" width = "200" height = "300" alt=""></img>
 
   <h1></h1>
 
