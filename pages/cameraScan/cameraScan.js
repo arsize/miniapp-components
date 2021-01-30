@@ -1,5 +1,7 @@
 const app = getApp();
 let animation = wx.createAnimation({});
+let innerAudioContext = wx.createInnerAudioContext()
+innerAudioContext.src = '../../img/scan_di.mp3'
 Page({
     data: {
         flash: "off",
@@ -43,17 +45,6 @@ Page({
             timer: timer
         })
     },
-    onHide() {
-        if (this.data.timer) {
-            clearInterval(this.data.timer)
-        }
-
-    },
-    onUnload() {
-        if (this.data.timer) {
-            clearInterval(this.data.timer)
-        }
-    },
     // 初始化完成
     initdone() {
         this.setData({
@@ -75,6 +66,7 @@ Page({
     // scan
     scansuccess(e) {
         let qrcode = e.detail.result
+        innerAudioContext.play()
         this.getResult(qrcode)
     },
     getResult(qrcode) {
