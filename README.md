@@ -11,10 +11,10 @@
 
 ## 项目预览
 
-<img src="./static/move.gif" width = "160" height = "280" alt=""></img>
-<img src="./static/dialog.gif" width = "160" height = "280" alt=""></img>
-<img src="./static/blue.gif" width = "160" height = "280" alt=""></img>
-<img src="./static/scan.gif" width = "160" height = "280" alt=""></img>
+<img src="./static/move.gif" width = "170" height = "280" alt=""></img>
+<img src="./static/dialog.gif" width = "170" height = "280" alt=""></img>
+<img src="./static/blue.gif" width = "150" height = "280" alt=""></img>
+<img src="./static/scan.gif" width = "170" height = "280" alt=""></img>
 
   <h1></h1>
 
