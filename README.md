@@ -14,7 +14,6 @@
 <img src="http://arsizes.com/img/miniapp_components/move.gif" width = "160" height = "260" alt=""></img>
 <img src="http://arsizes.com/img/miniapp_components/dialog.gif" width = "160" height = "260" alt=""></img>
 <img src="http://arsizes.com/img/miniapp_components/blue.gif" width = "160" height = "260" alt=""></img>
-<img src="http://arsizes.com/img/miniapp_components/scan.gif" width = "160" height = "260" alt=""></img>
 <img src="http://arsizes.com/img/miniapp_components/lock.gif" width = "160" height = "260" alt=""></img>
 
   <h1></h1>
